@@ -1,68 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root,
+[data-theme="light"] {
+  color-scheme: light;
+  --font-family: "Segoe UI", Arial, sans-serif;
+
+  --background-color: #f4f7fb;
+  --color: #243247;
+  --h1-color: #14243b;
+  --h2-color: #14243b;
+  --h3-color: #14243b;
+  --muted-color: #64748b;
+
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --primary-focus: rgba(37, 99, 235, 0.2);
+  --primary-inverse: #fff;
+
+  --card-background-color: #fff;
+  --card-sectionning-background-color: #f8fafc;
+  --card-border-color: #e2e8f0;
+  --card-box-shadow: 0 8px 28px rgba(15, 23, 42, 0.06);
+
+  --form-element-background-color: #fff;
+  --form-element-border-color: #cbd5e1;
+  --form-element-color: #243247;
+  --form-element-placeholder-color: #94a3b8;
+  --form-element-active-border-color: #2563eb;
+}
+
+body {
+  margin: 0;
+  background: #f4f7fb;
+  color: #243247;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
 
 #root {
-    --font-family: Rubik, Verdana, sans-serif;
-    --primary: rgb(115, 2, 12);
-    --primary-hover: black;
-    --color: white;
-    --h1-color: var(--color);
-    --h2-color: var(--color);
-    --h3-color: var(--color);
-    --card-background-color: rgba(0, 0, 0, 0.8);
-    --card-sectionning-background-color: rgba(0, 0, 0, 0.8);
-    --form-element-active-border-color: var(--color);
-    --form-element-placeholder-color: gray;
+  min-height: 100vh;
 }
 
-#root h1 {
-    font-size: 3rem;
-    margin-bottom: 0px;
+h1 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
 }
 
-#root h2 {
-    margin-bottom: 0px;
+h2 {
+  font-size: 1.4rem;
 }
 
-#root h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0px;
+h3 {
+  font-size: 1.25rem;
 }
 
-#root p {
-    margin-bottom: 10px;
+input,
+select,
+button,
+a[role="button"] {
+  border-radius: 10px;
 }
 
-#root [role=button], #root button, #root input[type=submit] {
-    font-family: var(--font-family);
-    font-weight: 500;
-    text-transform: uppercase;
-    border: 2px solid transparent;
-    margin: 10px;
-    width: max-content;
-}
-
-#root [role=button]:hover, #root button:hover, #root input[type=submit]:hover {
-    border: 2px solid var(--color);
-}
-
-#root main {
-    display: flex;
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
-
-#root article {
-    text-align: left;
-    margin-bottom: 5px;
-}
-
-#root article header {
-    border-bottom: 0px;
-    margin-bottom: 10px;
-}
-
-#root article footer {
-    border-top: 0px;
-    margin-top: 0px;
-    display: flex;
+button,
+a[role="button"] {
+  font-weight: 600;
 }

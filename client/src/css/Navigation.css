@@ -1,7 +1,65 @@
-nav {
-    background-color: rgba(0, 0, 0, 0.8);
-    width: 100vw;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 20px;
+.app > nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  width: 100%;
+  margin: 0;
+  padding: 1.1rem max(1.25rem, calc((100% - 1200px) / 2));
+
+  background: linear-gradient(110deg, #142c50, #244f86);
+  border: 0;
+  border-bottom: 4px solid #60a5fa;
+  border-radius: 0;
+}
+
+.app > nav h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.6rem;
+  letter-spacing: -0.5px;
+}
+
+.app > nav ul {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+}
+
+.app > nav li {
+  padding: 0;
+  list-style: none;
+}
+
+.app > nav a[role="button"] {
+  margin: 0;
+  padding: 0.65rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 10px;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.app > nav a[role="button"]:hover {
+  background: #fff;
+  border-color: #fff;
+  color: #173b70;
+}
+
+@media (max-width: 640px) {
+  .app > nav {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .app > nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
